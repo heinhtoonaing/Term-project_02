@@ -3,7 +3,7 @@ import ErrorHandler from "../middlewares/error.js";
 import { Application } from "../models/applicationSchema.js";
 import { Job } from "../models/jobSchema.js";
 import cloudinary from "cloudinary";
-<<<<<<< HEAD
+
 import { check, validationResult } from "express-validator";
 
 // Middleware for file upload (express-fileupload)
