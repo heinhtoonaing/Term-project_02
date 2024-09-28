@@ -1,5 +1,5 @@
 export const sendToken = (user, statusCode, res, message) => {
-<<<<<<< HEAD
+
     const token = user.getJWTToken();
     const options = {
       expires: new Date(
