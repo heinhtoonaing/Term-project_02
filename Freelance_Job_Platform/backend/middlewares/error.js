@@ -1,5 +1,5 @@
 class ErrorHandler extends Error {
-<<<<<<< HEAD
+
     constructor(message, statusCode) {
       super(message);
       this.statusCode = statusCode;
