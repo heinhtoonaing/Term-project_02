@@ -72,6 +72,7 @@ p {
   }
 }
 
+
 .authPage {
   display: flex;
   min-width: 1500px;
@@ -79,6 +80,7 @@ p {
   margin: 0 auto;
   min-height: 100vh;
 }
+
 .authPage .container {
   flex: 1;
   display: flex;
@@ -236,6 +238,69 @@ p {
 .navbarHide {
   display: none;
 }
+.heroSection .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align the text */
+  text-align: center; /* Center align the text */
+}
+
+.heroSection .title h1 {
+  font-size: 3rem; /* Adjust the size for smaller screens */
+  margin-bottom: 0.5rem; /* Add some spacing between lines */
+}
+
+.heroSection .title p {
+  max-width: 800px; /* Restrict the paragraph width */
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #555; /* Soft gray color */
+}
+
+.heroSection .cta-button {
+  margin-top: 1.5rem;
+  padding: 12px 30px;
+  background-color: #2d5649;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.heroSection .cta-button:hover {
+  background-color: #184235; /* Darker green on hover */
+}
+
+.howitworks .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.howitworks .card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.howitworks .card p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.howitworks .card svg {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2d5649;
+}
+
 
 .heroSection {
   display: flex;

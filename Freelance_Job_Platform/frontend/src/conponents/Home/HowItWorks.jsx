@@ -14,24 +14,24 @@ const HowItWorks = () => {
               <FaUserPlus />
               <p>Create Account</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                Create your free account to start exploring job opportunities or
+                posting vacancies.
               </p>
             </div>
             <div className="card">
               <MdFindInPage />
               <p>Find a Job/Post a Job</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                Easily search for job openings or post job listings based on your
+                requirements.
               </p>
             </div>
             <div className="card">
               <IoMdSend />
-              <p>Apply For Job/Recruit Suitable Candidates</p>
+              <p>Apply for Jobs/Recruit Candidates</p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Consequuntur, culpa.
+                Apply for positions that match your skills or recruit the best
+                candidates for your company.
               </p>
             </div>
           </div>

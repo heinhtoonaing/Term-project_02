@@ -97,8 +97,8 @@ const PostJob = () => {
                 <option value="Frontend Web Development">
                   Frontend Web Development
                 </option>
-                <option value="MERN Stack Development">
-                  MERN STACK Development
+                <option value="Full Stack Development">
+                  Full STACK Development
                 </option>
                 <option value="Account & Finance">Account & Finance</option>
                 <option value="Artificial Intelligence">

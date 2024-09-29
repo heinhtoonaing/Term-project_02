@@ -1,84 +1,54 @@
 import React from "react";
-import {
-  MdOutlineDesignServices,
-  MdOutlineWebhook,
-  MdAccountBalance,
-  MdOutlineAnimation,
-} from "react-icons/md";
-import { TbAppsFilled } from "react-icons/tb";
-import { FaReact } from "react-icons/fa";
-import { GiArtificialIntelligence } from "react-icons/gi";
-import { IoGameController } from "react-icons/io5";
+import { FaMicrosoft, FaApple } from "react-icons/fa";
+import { SiTesla } from "react-icons/si";
 
-const PopularCategories = () => {
-  const categories = [
+const PopularCompanies = () => {
+  const companies = [
     {
       id: 1,
-      title: "Graphics & Design",
-      subTitle: "305 Open Positions",
-      icon: <MdOutlineDesignServices />,
+      title: "Microsoft",
+      location: "Millennium City Centre, Gurugram",
+      openPositions: 10,
+      icon: <FaMicrosoft />,
     },
     {
       id: 2,
-      title: "Mobile App Development",
-      subTitle: "500 Open Positions",
-      icon: <TbAppsFilled />,
+      title: "Tesla",
+      location: "Millennium City Centre, Gurugram",
+      openPositions: 5,
+      icon: <SiTesla />,
     },
     {
       id: 3,
-      title: "Frontend Web Development",
-      subTitle: "200 Open Positions",
-      icon: <MdOutlineWebhook />,
-    },
-    {
-      id: 4,
-      title: "MERN STACK Development",
-      subTitle: "1000+ Open Postions",
-      icon: <FaReact />,
-    },
-    {
-      id: 5,
-      title: "Account & Finance",
-      subTitle: "150 Open Positions",
-      icon: <MdAccountBalance />,
-    },
-    {
-      id: 6,
-      title: "Artificial Intelligence",
-      subTitle: "867 Open Positions",
-      icon: <GiArtificialIntelligence />,
-    },
-    {
-      id: 7,
-      title: "Video Animation",
-      subTitle: "50 Open Positions",
-      icon: <MdOutlineAnimation />,
-    },
-    {
-      id: 8,
-      title: "Game Development",
-      subTitle: "80 Open Positions",
-      icon: <IoGameController />,
+      title: "Apple",
+      location: "Millennium City Centre, Gurugram",
+      openPositions: 20,
+      icon: <FaApple />,
     },
   ];
   return (
-    <div className="categories">
-      <h3>POPULAR CATEGORIES</h3>
-      <div className="banner">
-        {categories.map((element) => {
-          return (
-            <div className="card" key={element.id}>
-              <div className="icon">{element.icon}</div>
-              <div className="text">
-                <p>{element.title}</p>
-                <p>{element.subTitle}</p>
+    <div className="companies">
+      <div className="container">
+        <h3>TOP COMPANIES</h3>
+        <div className="banner">
+          {companies.map((element) => {
+            return (
+              <div className="card" key={element.id}>
+                <div className="content">
+                  <div className="icon">{element.icon}</div>
+                  <div className="text">
+                    <p>{element.title}</p>
+                    <p>{element.location}</p>
+                  </div>
+                </div>
+                <button>Open Positions {element.openPositions}</button>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </div>
   );
 };
 
-export default PopularCategories;
+export default PopularCompanies;

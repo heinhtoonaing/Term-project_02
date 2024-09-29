@@ -92,18 +92,7 @@ const Register = () => {
                 <MdOutlineMailOutline />
               </div>
             </div>
-            <div className="inputTag">
-              <label>Phone Number</label>
-              <div>
-                <input
-                  type="number"
-                  placeholder="12345678"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                />
-                <FaPhoneFlip />
-              </div>
-            </div>
+ 
             <div className="inputTag">
               <label>Password</label>
               <div>
