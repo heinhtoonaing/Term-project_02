@@ -2,6 +2,8 @@
 
 A comprehensive job portal application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. This application allows users to browse job listings, apply for jobs, and manage their applications seamlessly.
 
+## Team Member:
+Nyan Lin Htet(https://github.com/Garris711) , Hein Htoo Naing(https://github.com/heinhtoonaing), Sai Sy Hein(BluePanPan21 (github.com))
 ## Features
 
 - **User Authentication:** Secure authentication using JWT (JSON Web Tokens) for both job seekers and employers.
@@ -49,4 +51,6 @@ To get a local copy up and running follow these simple steps.
    npm start
    ```
 4. Open your browser and navigate to `http://localhost:3000` to view the app.
+
+  
 
