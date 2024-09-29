@@ -8,7 +8,7 @@ import { check, validationResult } from "express-validator";
 
 // Middleware for file upload (express-fileupload)
 import fileUpload from "express-fileupload";
-app.use(fileUpload({ useTempFiles: true }));
+
 
 // Post application
 export const postApplication = [
