@@ -37,6 +37,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    cd react-job-portal
    cd backend
+   npm install express-validator
    npm install
    cd..
    cd frontend
