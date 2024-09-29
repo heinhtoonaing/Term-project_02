@@ -72,6 +72,106 @@ p {
   }
 }
 
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.authPage {
+  display: flex;
+  min-width: 1500px;
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.authPage .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  padding: 20px 20px;
+}
+
+.authPage .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduce the gap between all form elements */
+}
+
+.login-btn {
+  padding: 12px;
+  text-align: center;
+  border: none;
+  margin-top: 15px; /* Adjust the space above Login button */
+  margin-bottom: 5px; /* Reduce the space below Login button */
+  font-weight: 700;
+  color: rgb(219, 53, 150); /* Your desired font color */
+  background: #2d5649;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.register-link {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #2d5649;
+  margin-top: 5px; /* Adjust space above Register Now button */
+  font-weight: 700;
+  color: #2d5649;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 7px;
+  cursor: pointer;
+  display: block; /* Ensures full width */
+}
+
+/* Additional styles */
+.authPage .container .header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.authPage .container .inputTag {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.authPage .container .inputTag div {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.authPage .container .inputTag div input,
+.authPage .container .inputTag div select {
+  background: #87878778;
+  padding: 8px;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.authPage .container .inputTag div input:focus,
+.authPage .container .inputTag div select:focus {
+  outline: none;
+}
+
+.authPage .container .inputTag div svg {
+  width: 10%;
+  font-size: 1.5rem;
+  background: #2d5649;
+  height: 100%;
+  padding: 8px;
+  color: #fff;
+}
 
 .authPage {
   display: flex;
