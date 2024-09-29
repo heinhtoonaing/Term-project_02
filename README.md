@@ -33,7 +33,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo:
    ```sh
-   git clone https://github.com/heinhtoonaing/Term-project_02.git
+   git clone https://github.com/heinhtoonaing/Term-project_02/tree/main
    ```
 2. Install NPM packages:
    ```sh
