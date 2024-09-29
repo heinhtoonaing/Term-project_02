@@ -43,18 +43,19 @@ const Register = () => {
     }
   };
 
-  if(isAuthorized){
-    return <Navigate to={'/'}/>
+  if (isAuthorized) {
+    return <Navigate to={'/'} />
   }
 
 
   return (
     <>
       <section className="authPage">
-        <div className="container">
+      <div className="container" style={{ marginLeft: '60px' }}>
+
           <div className="header">
-            <img src="/JobZeelogo.png" alt="logo" />
-            <h3>Create a new account</h3>
+          <h3 style={{ fontSize: '40px', fontWeight: 'bold' }}>Create a new account</h3>
+
           </div>
           <form>
             <div className="inputTag">
@@ -73,7 +74,7 @@ const Register = () => {
               <div>
                 <input
                   type="text"
-                  placeholder="Zeeshan"
+                  placeholder="Enter your name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
@@ -85,14 +86,37 @@ const Register = () => {
               <div>
                 <input
                   type="email"
-                  placeholder="zk@gmail.com"
+                  placeholder="example@gmail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 <MdOutlineMailOutline />
               </div>
             </div>
- 
+            <div className="inputTag">
+              <label>Phone Number</label>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Enter your phone number"
+                  value={phone}
+                  onChange={(e) => {
+                    // Allow only numbers
+                    const re = /^[0-9\b]+$/;
+                    if (e.target.value === "" || re.test(e.target.value)) {
+                      setPhone(e.target.value);
+                    }
+                  }}
+                  maxLength={10} // Set the maximum length of the phone number if required
+                  inputMode="numeric" // Brings up the numeric keyboard on mobile devices
+                  pattern="[0-9]*" // Allows only numeric input
+                />
+                <FaPhoneFlip />
+              </div>
+            </div>
+
+
+
             <div className="inputTag">
               <label>Password</label>
               <div>
